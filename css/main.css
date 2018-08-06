@@ -1,0 +1,24 @@
+/* Setting CSS Variables */
+/* Setting it on the root SM to declaring CSS on an HTML element */
+
+:root {
+    --base: #ffc600 ;
+    --spacing: 10px;
+    --blur: 1px;
+    --threeDRotate: rotateY(0deg);
+
+}
+
+/* calling variables on a CSS element */
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    transform: rotateY(var(--threeDRotate));
+    transform-style: preserve-3d;
+}
+
+#highlight {
+    color: var(--base);
+    transform: rotateY(var(--threeDRotate));
+}
